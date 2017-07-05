@@ -8,7 +8,6 @@ if (!require(bigrquery)) devtools::install_github("rstats-db/bigrquery")
 if (!require(data.table)) install.packages("data.table")
 if (!require(readr)) install.packages("readr")
 
-
 ## DBI
 
 library(DBI)
@@ -110,11 +109,11 @@ str(tran)
 
 ## set Mysql with google cloud
 
-# user<-"root"
-# pw<-"XXXXXXXXXXXXXXXX"
-# host<-'XXX.XXX.XXX.XXX'
+user<-"isbyeon"
+pw<-""
+host<-'35.188.28.209'
 
-# save(user,pw,host,file ="./gsql.RData")
+save(user,pw,host,file ="./gsql.RData")
 
 load("./gsql.RData")
 
@@ -125,8 +124,8 @@ con <- dbConnect(MySQL(),
                  host = host,
                  dbname = "recom")
 dbListTables(conn = con)
-dbWriteTable(conn = con, name = 'tran', value = "./recomen/tran.csv")
-dbReadTable(conn = con, name = "Test")
+dbWriteTable(conn = con, name = 'item', value = "./recomen/item.csv")
+dbReadTable(conn = con, name = "item")
 
 ## for bigquery query
 
