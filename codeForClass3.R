@@ -294,6 +294,7 @@ class(flights)
 dim(flights)
 
 # subset like where
+
 ans <- flights[origin == "JFK" & month == 6L]
 head(ans)
 
