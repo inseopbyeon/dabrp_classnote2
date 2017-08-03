@@ -155,7 +155,7 @@ flights %>%
 # assign values
 popular_dests <- flights %>% 
   group_by(dest) %>% 
-  filter(n() > 365)
+  filter(n() > 100)
 popular_dests
 
 
@@ -164,7 +164,7 @@ popular_dests %>%
   mutate(prop_delay = arr_delay / sum(arr_delay)) %>% 
   select(year:day, dest, arr_delay, prop_delay)
 
-# tidyr examples
+# tidyr exliamples
 table1
 table2
 table3
