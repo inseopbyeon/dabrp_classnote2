@@ -130,7 +130,7 @@ transmute(flights,
 lag(x)
 lead(x)
 
-# summarise what you want to get
+# __summarise what you want to get
 summarise(flights, delay = mean(dep_delay, na.rm = TRUE))
 
 # group_by 
