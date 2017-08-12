@@ -301,5 +301,9 @@ dbReadTable(conn = con, name = "Test")
 library(bigrquery)
 project <- "konlper-168808" 
 sql <- "SELECT * FROM [konlper-168808:recom.chennel] LIMIT 5"
+<<<<<<< HEAD
 >>>>>>> 064d0b4f9eb5dfddd0eef7b929e283645c7b2018
+=======
+>>>>>>> a24a4ec16bcdacc38173d56ea0db1ee4c8ca57f3
+>>>>>>> 7426fd769ba65d43667cfc7f3c37e2aae75a8350
 query_exec(sql, project = project)
