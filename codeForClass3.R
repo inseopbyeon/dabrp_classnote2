@@ -242,6 +242,7 @@ flights2 %>%
 
 ## dplyr with db
 library(dplyr)
+library(dbplyr)
 library(RSQLite)
 
 sqlite_db = src_sqlite('sqlite_db.sqlite', 

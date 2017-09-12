@@ -285,7 +285,7 @@ con <- dbConnect(MySQL(),
                  user = user,
                  password = pw,
                  host = host,
-                 dbname = "fctestp")
+                 dbname = "recom")
 dbListTables(conn = con)
 dbWriteTable(conn = con, name = 'chennel', value = "./recomen/chennel.csv")
 dbReadTable(conn = con, name = "Test")
